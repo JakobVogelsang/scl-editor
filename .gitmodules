@@ -62,3 +62,7 @@
 	path = plugins/oscd-designer
 	url = https://github.com/ca-d/oscd-designer
 	branch = gh-pages
+[submodule "plugins/scl-communication-editor"]
+	path = plugins/scl-communication-editor
+	url = https://github.com/OpenEnergyTools/scl-communication-editor
+	branch = gh-pages
