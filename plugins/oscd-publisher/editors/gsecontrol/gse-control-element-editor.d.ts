@@ -15,10 +15,10 @@ export declare class GseControlElementEditor extends LitElement {
     element: Element | null;
     /** SCL change indicator */
     editCount: number;
-    get gSE(): Element | null | undefined;
+    get gSE(): Element | null;
     private gSEdiff;
     private gSEControlDiff;
-    gSEInputs?: SclTextField[];
+    gSEInputs: SclTextField[];
     gseSave: Button;
     gSEControlInputs: (SclTextField | SclSelect | SclCheckbox)[];
     gseControlSave: Button;

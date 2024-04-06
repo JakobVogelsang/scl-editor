@@ -71,6 +71,13 @@
       "src": "plugins/oscd-designer/oscd-designer.js"
     },
     {
+      "name": "Communication Mapping",
+      "icon": "link",
+      "active": true,
+      "requireDoc": true,
+      "src": "plugins/scl-communication-editor/scl-communication-editor.js"
+    },
+    {
       "name": "Publisher",
       "icon": "publish",
       "active": true,
