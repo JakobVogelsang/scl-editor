@@ -25,6 +25,6 @@ export declare class SclWizardingSelect extends Select {
     firstUpdated(): Promise<void>;
     checkValidity(): boolean;
     constructor();
-    renderSwitch(): import("lit-html").TemplateResult<1>;
-    render(): import("lit-html").TemplateResult<1>;
+    renderSwitch(): import("lit").TemplateResult<1>;
+    render(): import("lit").TemplateResult<1>;
 }

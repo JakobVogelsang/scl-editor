@@ -33,6 +33,6 @@ export declare class SclWizardingCheckbox extends LitElement {
     private enable;
     private disable;
     firstUpdated(): void;
-    renderSwitch(): import("lit-html").TemplateResult<1>;
-    render(): import("lit-html").TemplateResult<1>;
+    renderSwitch(): import("lit").TemplateResult<1>;
+    render(): import("lit").TemplateResult<1>;
 }

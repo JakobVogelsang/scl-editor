@@ -42,8 +42,8 @@ export declare class SclWizardingTextfield extends TextField {
     firstUpdated(): Promise<void>;
     checkValidity(): boolean;
     constructor();
-    renderUnitSelector(): import("lit-html").TemplateResult<1>;
-    renderMulplierList(): import("lit-html").TemplateResult<1>;
-    renderSwitch(): import("lit-html").TemplateResult<1>;
-    render(): import("lit-html").TemplateResult<1>;
+    renderUnitSelector(): import("lit").TemplateResult<1>;
+    renderMulplierList(): import("lit").TemplateResult<1>;
+    renderSwitch(): import("lit").TemplateResult<1>;
+    render(): import("lit").TemplateResult<1>;
 }
