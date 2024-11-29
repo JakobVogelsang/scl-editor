@@ -27241,8 +27241,10 @@ let CodeDialog = class CodeDialog extends s$1 {
             this.dispatchEvent(new CustomEvent('closed'));
     }
     updated() {
-        this.editor.basePath = '';
+        const basePath = import.meta.resolve('./ace');
+        this.editor.basePath = basePath;
         this.editor.mode = 'ace/mode/xml';
+        this.editor.theme = 'ace/theme/oscd_custom';
     }
     render() {
         if (!this.element)
@@ -27257,7 +27259,6 @@ let CodeDialog = class CodeDialog extends s$1 {
       <ace-editor
         wrap
         soft-tabs
-        theme="ace/theme/solarized_light"
         value="${formatXml(new XMLSerializer().serializeToString(this.element))}"
         style="width: 80vw; height: calc(100vh - 240px);"
       ></ace-editor>
@@ -47720,6 +47721,17 @@ class SclWizarding extends s$1 {
     ></wizard-code-form>`;
     }
 }
+SclWizarding.styles = i$5 `
+    * {
+      --mdc-text-field-fill-color: var(--oscd-base2);
+      --mdc-text-field-disabled-fill-color: var(--oscd-base3);
+      --mdc-text-field-ink-color: var(--oscd-base00);
+      --mdc-text-field-label-ink-color: var(--oscd-base00);
+      --mdc-select-fill-color: var(--oscd-base2);
+      --mdc-select-disabled-fill-color: var(--oscd-base3);
+      --mdc-select-ink-color: var(--oscd-base00);
+    }
+  `;
 __decorate$1([
     t$1()
 ], SclWizarding.prototype, "workflow", void 0);
